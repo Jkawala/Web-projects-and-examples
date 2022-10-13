@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Review Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+        <!-- This is where css and javascript is linked -->
+    <link rel="stylesheet" type="text/css" href="reviews.css">
+    <script src="review.js"></script>
+    </head>
+   <!-- allows the javascript to check for cookies -->
+    <body onload="checkCookie()">
+         <!-- this is where the header is located-->
+    
+        <div class="header">
+            <!--Site search box goes in the "site-search" div below-->
+        <div class="top-row">
+            <div class="search-bar">
+             <form method="get" action="index.php">
+                 <input type="text" placeholder="search.." name="search"> 
+             
+             </form>
+             </div>  
+        </div>
+        <div class="middle-row">
+            <div class="name-logo-wrapper">
+                <div class="name-logo">
+                    <div class="name">Gustosa</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="nav-links">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="menu.html">Menu</a>
+                </div>
+                <div class="nav-link">
+                    <a href="reservation.html">Reservation</a>
+                </div>
+                <div class="nav-link">
+                    <a href="reviews.html">Reviews</a>
+                </div>
+                
+            </div>
+        </div>    
+         </div> 
+   
+    <!--header ends-->
+    
+    <!--start of parallex-->
+     <div class="scroll-section">
+        <div class="top-heading">
+            <h1>Italian Pizza</h1>
+        </div>
+    </div>
+    <!--end of parallex-->
+    
+    <!-- this is where the content page starts-->
+    <div class="content-section">
+        <div class="wrapper">
+            
+            <h1>Dashboard</h1>
+            <p>This section of the website highlights previous customers reviews of our food and restaurant.</p>
+            <p> We hope that this section will help you understand our business and encourage you to engage with our business</p>
+            <p> Dont forget to leave a review!! </p>
+            <br>
+            <h2 style="text-align:center">Our Food</h2>
+            <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/pissa.jfif" alt="pizza" style="width:100%">
+     
+   
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/lasagna.gif" alt="lasagna" style="width:100%">
+
+  
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/burger.jfif" alt="burger" style="width:100%">
+     
+     
+    </div>
+  </div>
+ 
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="images/restaurant.gif" alt="restaurant" style="width:100%">
+  <h3>Restaurant review</h3>
+  <div class="containing">
+  <img src="images/dave.jfif" alt="Dave" style="width:90px">
+  <p><span>Dave Santanna</span></p>
+  <p>The restaurant was easy to find and had amazing customer service</p>
+</div>
+  <div class="containing">
+  <img src="images/dexter.jfif" alt="dexter" style="width:50px">
+  <p><span>Dexter la</span></p>
+  <p>My friend recommended me the restaurant and I havent regretted it since</p>
+</div>
+  <div class="containing">
+  <img src="images/eric.jfif" alt="eric" style="width:50px">
+  <p><span>Eric Cartman</span></p>
+  <p>The food and the service was amazing</p>
+</div>
+   <div class="containing">
+  <img src="images/cherry.jfif" alt="cherry" style="width:90px">
+  <p><span>Cherry Daniels</span></p>
+  <p>Its the best Italian meal ive had in a long time.</p>
+</div>
+ 
+   <div class="containing">
+  <img src="images/adam.jfif" alt="Adam" style="width:90px">
+  <p><span>Adam Fox</span></p>
+  <p>Tasted like it was a genuine Italian meal.</p>
+</div>
+   <div class="containing">
+  <img src="images/avater.jfif" alt="Avatar" style="width:90px">
+  <p><span>Anonymous</span></p>
+  <p>The lasagna tasted heavenly.</p>
+</div>
+</div>
+
+<!-- END MAIN -->
+</div>
+            
+             <div class="review-sub">
+            <h1>Leave a review</h1>
+
+          <p><span class="error">* required field *</span></p>
+<form method="post" action="index.php">  
+  Name: <input type="text" name="username">
+  <span class="error"></span>
+  <br><br>
+  Email: <input type="text" name="email">
+  <span class="error"> </span>
+  <br><br>
+  Age: <input type="text" name="age">
+  <span class="error"></span>
+  <br><br>
+  Review: <textarea name="review" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?>
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> 
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?>  
+  <span class="error"></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+            <div class="clearfix"></div>
+        </div>
+     
+
+
+        
+    </div>
+    <!-- content page ends-->
+    
+    <!--footer page is located-->
+    
+    <div class="footer">
+        <div class="footer">
+        <div class="left-column">
+            <p>Gustosa<br>Grafton Street<br>Dublin 2<br>Tel: 01-1234567<br>Email: <a href="mailto:gustosa@example.com">gustosa@example.com</a></p>
+        </div>
+        <div class="center-column">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.053880802438!2d-6.261939384504318!3d53.342291679978096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9b8c8edbf1%3A0x90afb1bb108edcdd!2sGrafton%20Street%2C%20Dublin!5e0!3m2!1sen!2sie!4v1609443474164!5m2!1sen!2sie" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="right-column">
+            <p>Open 11am to Midnight<br>7 days a week</p>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2020 Gustosa &#124; All rights reserved
+    </div>
+    <!--footer page ends-->
+    </body>
+</html>
