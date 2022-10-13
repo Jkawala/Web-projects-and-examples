@@ -1,0 +1,309 @@
+/*
+
+Author: James Kawala;
+Theme: Restaurant Order website Admin;
+version; 1.0;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+ box-sizing: border-box;
+ 
+}
+
+/* Adds a light blue background color to the navigation bar */
+
+body{
+        background-color: #cfe0e8;
+}
+
+/*---------header styles start here---------*/
+.header {
+    height: 140px;
+    background-color: #cfe0e8;
+    /* flexbox container*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.header > .top-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header > .middle-row > .name-logo-wrapper {
+    padding-bottom: 25px;
+}
+
+.header > .middle-row > .name-logo-wrapper > .name-logo {
+    background-color: #cfe0e8;
+    padding: 5px;
+    border-style:solid;
+    border-color: #cea135;
+    border-radius: 50px;
+}
+
+.header > .middle-row > .name-logo-wrapper > .name-logo > .name {
+    font-family: "Ubuntu Condensed";
+    font-size: 50px;
+    color: #cea135;
+}
+
+.header > .bottom-row > .nav-links {
+    display: flex;
+}
+
+.header > .bottom-row > .nav-links > .nav-link {
+    width: 220px;
+    text-align: center;
+}
+
+.header > .bottom-row > .nav-links > .nav-link a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 30px;
+    color: #36486b;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/*change text color and spacing when hover*/
+.header > .bottom-row > .nav-links > .nav-link a:hover {
+    color: #cea135;
+    letter-spacing: 2px;
+}
+/*-------------header styles end here---------------*/
+
+/* Styles the navigation bar */
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Changes the colour of the navigation link */
+.header a:hover {
+  background-color: #f3e1dd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.header a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.search-bar {
+    float: right;
+}
+
+.search-bar button:hover {
+    background: #ccc;
+}
+.name-border {
+    background-color: #cfe0e8;
+    padding: 5px;
+    border-style:solid;
+    border-color: #36486b;
+    border-radius: 20px;
+}
+.name-border > .name {
+    font-family: "Ubuntu Condensed";
+    font-size: 50px;
+    color: #36486b;
+}
+/* Style the search box inside the navigation bar */
+.header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .header a, .header input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .header input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+   
+.wrapper {
+    border: ;
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+    
+}
+.text-centre {
+    text-align: center;
+}
+/*main-content*/
+.content-section {
+    background-color: ;
+    margin: 1% 0 auto;
+}
+
+.column{
+  
+  float: left;
+  padding: 0 2px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/* footer section*/
+.footer-section {
+    background: #f3e1dd;
+    color: white;
+    margin-top: 1% ;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: ;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.containers {
+    float:  
+    border: 1px solid black;
+}
+
+.containing {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.containing::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containing img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containing span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .containing {
+      text-align: center;
+  }
+  .containing img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+.error {
+    color: #FF0000;
+}
+
+/*------------parallax scroll section starts----------------*/
+.scroll-section {
+    background-image: url(images/italian.gif);
+    margin-top: 5%;
+    padding: 100px;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-section > .top-heading {
+    padding: 5px 5px;
+    background-color: #cfe0e8;
+    font-family: "Ubuntu Condensed";
+    color: #36486b;
+    width: 130px;
+    border-radius: 2px;
+}
+/*---------------parallax scroll section ends--------------*/
+
+.footer {
+    padding-top: 15px;
+    background-color: #618685;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Ubuntu Condensed";
+    font-size: 1.5em;
+    color: #36486b;
+    padding-bottom: 30px;

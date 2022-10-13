@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Restaurant</title>
+		<link rel="stylesheet" type="text/css" href="reviews.css">
+</head>                
+
+<body>
+    <!-- this is where the header is located-->
+    <div class="menu-section">
+        <div class="header">
+            <div class="name-border">
+            <div class="name">Gustosa's restaurant</div>
+             </div>
+             <a href="#">Home</a>
+	     <a href="#">Menu</a>
+	     <a href="#">Reservation</a>
+	     <a href="reviews.html">Reviews</a>
+             <a href="#">?</a>
+             <div class="search-bar">
+             <form method="get" action="/header.php">
+                 <input type="text" placeholder="search.." name="search"> 
+             
+             </form>
+             </div>    
+         </div> 
+    </div>
+    <!--header ends-->
+    
+    <!-- this is where the content page starts-->
+    <div class="content-section">
+        <div class="wrapper">
+            <h1>Dashboard</h1>
+            <p>This section of the website highlights past and present reviews of our food and restaurant.</p>
+            <p> We hope that this section will help you understand our business and encourage you to engage with our business</p>
+            <br>
+            <h2 style="text-align:center">Reviews</h2>
+            
+             <div class="review-sub">
+            <h1>Leave a review</h1>
+            <form action="/review.php" method="get" target="_blank">
+                <label for="fname"> Full name: </label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="review">Opinion:</label>
+                <input type="text" id="review" name="review">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>  
+            <div class="clearfix"></div>
+        </div>
+        
+    </div>
+    <!-- content page ends-->
+    
+    <!--footer page is located-->
+    
+    <div class="footer-section">
+        <div class="wrapper">
+           <p class="text-centre"> 2020 All Rights Reserved to (restaurant name). Developed by . <a href="#">JJFA</a></p>
+        </div>
+        
+        
+    </div>
+    <!--footer page ends-->
+</body>
+</html>
